@@ -1,0 +1,53 @@
+{
+    "name": "wainwright/casino-dog",
+    "description": "Casino Dog is a tool to alter outcome of casino games. Tool originating from David G. Wainwright (HollywoodTV) and used by big brand-names like Sportsbet.io, Stake.com, Bitstarz.com, Softswiss.com, Betsson Group and many more.",
+    "keywords": [
+        "wainwright", "casino games", "slotmachines", "pragmatic play", "bitstarz", "betsson", "evolution", "booongo", "playson", "relaxgaming", "1x2gaming", "hacksaw",
+        "betconstruct", "upgaming", "isoftbet", "quickfire", "isoftbet", "the hub", "nyx", "nyxgaming", "nextgen gaming", "rubyplay", "microgaming", "bc.game", "stake.com",
+        "casino framework", "casino dogs", "david g. wainwright", "mondogaming", "hollywoodtv", "softswiss", "casino-dog", "casino api"
+    ],
+    "homepage": "https://gitlab.com/wainwright/casino-dog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ryanwest",
+            "email": "ryan.west@online.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1",
+        "spatie/laravel-package-tools": "^1.9.2",
+        "jeffgreco13/filament-breezy": "*",
+        "filament/filament": "^2.0",
+        "illuminate/contracts": "^9.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wainwright\\CasinoDog\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wainwright\\CasinoDog\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wainwright\\CasinoDog\\CasinoDogServiceProvider"
+            ],
+            "aliases": {
+                "CasinoDog": "Wainwright\\CasinoDog\\Facades\\CasinoDog"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
